@@ -30,7 +30,7 @@
           run: echo Deploy in HMG
         - uses: actions/checkout@master
         - name: Run Snyk to check for vulnerabilities
-       uses: snyk/actions/maven@master
+          uses: snyk/actions/maven@master
        env:
          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
        with:
@@ -47,7 +47,7 @@
           run: echo Deploy in PRD
         - uses: actions/checkout@master
         - name: Run Snyk to check for vulnerabilities
-       uses: snyk/actions/maven@master
+          uses: snyk/actions/maven@master
        env:
          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
        with:
