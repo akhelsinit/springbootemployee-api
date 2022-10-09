@@ -42,4 +42,6 @@
           run: echo Deploy in PRD
         - name: Run Snyk to check for vulnerabilities
           uses: snyk/actions/maven@master
+          with:
+            command: code test
           
