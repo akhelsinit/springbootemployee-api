@@ -38,13 +38,16 @@
       steps:
         - name: Run a one-line script
           run: echo Deploy in PRD
+
+    code-security:
+      runs-on: ubuntu-latest
+      steps:
         - uses: actions/checkout@master
         - name: Run Snyk to check for vulnerabilities
-        - uses: snyk/actions/maven@master
-          env:
-            SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
-          with:
-            command: code test
-        
+          uses: snyk/actions/maven@master
+        env:
+         SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+      with:
+         command: code test
     
     
