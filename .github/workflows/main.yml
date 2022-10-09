@@ -40,8 +40,10 @@
       steps:
         - name: Run a one-line script
           run: echo Deploy in PRD
-        - name: Run Snyk to check for vulnerabilities
-          uses: snyk/actions/maven@master
-          with:
-            command: code test
-          
+#        - name: Run Snyk to check for vulnerabilities
+#          uses: snyk/actions/maven@master
+#          with:
+#            command: code test
+          - name: Snyk Scan
+            uses: eeveebank/github-actions-snyk@1.0.6
+
