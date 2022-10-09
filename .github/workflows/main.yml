@@ -40,3 +40,6 @@
       steps:
         - name: Run a one-line script
           run: echo Deploy in PRD
+        - name: Run Snyk to check for vulnerabilities
+          uses: snyk/actions/maven@master
+          
