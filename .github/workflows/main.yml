@@ -44,6 +44,6 @@
 #          uses: snyk/actions/maven@master
 #          with:
 #            command: code test
-          - name: Snyk Scan
-            uses: eeveebank/github-actions-snyk@1.0.6
+        - name: Snyk Scan
+          uses: eeveebank/github-actions-snyk@1.0.6
 
