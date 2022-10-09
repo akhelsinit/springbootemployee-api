@@ -40,7 +40,3 @@
       steps:
         - name: Run a one-line script
           run: echo Deploy in PRD
-        - name: Snyk
-          uses: snyk/actions@0.3.0
-        with:
-          command: code test
