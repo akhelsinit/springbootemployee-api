@@ -31,7 +31,7 @@ jobs:
 
     
     
-    deploy-dev:
+  deploy-dev:
     environment: 
         name: dev
         url: 'daniel.souza.com.br'
@@ -48,7 +48,7 @@ jobs:
         
         
         
-    deploy-hmg:
+  deploy-hmg:
     environment: 
         name: dev
         url: 'daniel.souza.com.br'
@@ -64,7 +64,7 @@ jobs:
         run: echo Deploy DEV
         
         
-    deploy-prd:
+  deploy-prd:
     environment: 
         name: dev
         url: 'daniel.souza.com.br'
